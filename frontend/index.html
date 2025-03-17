@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LLM Chatbot</title>
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>async function verifyNews(newsText) {
+  const actor = await createActor("w36hm-eqaaa-aaaal-qr76a-cai");
+  const response = await actor.checkNews(newsText);
+  return response;
+} </script>
+    <script type="module" src="src/main.jsx"></script>
+  </body>
+</html>
